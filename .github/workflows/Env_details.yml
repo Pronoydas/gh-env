@@ -1,0 +1,8 @@
+name: Get Env Details
+on: push 
+jobs:
+  Env:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Inv Details
+        run : echo "${{ toJson(github) }}"
