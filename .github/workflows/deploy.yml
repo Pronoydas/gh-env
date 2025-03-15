@@ -4,6 +4,8 @@ on:
     branches:
       - main
       - dev
+  pull_request:
+    types: [opened , closed]    
 env:
   MONGODB_DB_NAME: gha-demo
   PORT: 8080      
